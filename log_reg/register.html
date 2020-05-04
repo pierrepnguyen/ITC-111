@@ -20,22 +20,49 @@
     <p class="center">Weekly Assignments: <a href="../classEx/classEx01.html.html">A01</a> | <a href="../classEx/classEx02.html.html">A02</a> | <a href="../classEx/ex.html">A02b</a> | <a href="../classEx/classEx02c.html">A02c</a></p>
 
     <!-- login & reg -->
-    <div>
-      <form action="POST">
-        <label for="fname">First Name:</label>
-        <input type="text" placeholder="John">
-        <label for="lname">Last Name:</label>
-        <input type="text" placeholder="Doe">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="example@email.com">
+    <div class="row">
+      <form class="col s12" onsubmit="alert(user.value); return false">
+        <!-- Name input -->
+        <div class="row">
+          <div class="col s6">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="col s6">
+            <br>
+            <input type="text" placeholder="Doe">
+          </div>
+        </div>
+        <!-- Age input -->
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="Enter Your Age">
+        <!-- Email input -->
+        <div class="row">
+          <div class="col s6">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="example@email.com">
+          </div>
+          <div class="col s6">
+            <br>
+            <input type="email" name="email" placeholder="Confirm email address">
+          </div>
+        </div>
+        <!-- Username input -->
         <label for="user">Username:</label>
-        <input type="text">
-        <label for="pw">Password:</label>
-        <input type="password">
-
+        <input type="text" name="user" placeholder="Enter A Username">
+        <!-- Password input -->
+        <div class="row">
+          <div class="col s6">
+            <label for="pw">Password</label>
+            <input type="password" name="pw" placeholder="Enter Your Password">
+          </div>
+          <div class="col s6">
+            <br><input type="password" name="confpw" placeholder="Confirm Your Password">
+          </div>  
+        </div>
         <!-- take to success page -->
         <p>Already have an account? <a href="../classEx/classEx02c.html">Sign in</a></p>
-        <a href="../log_reg/success.html" class="waves-effect waves-light btn"><i class="material-icons right">send</i>Submit</a>
+        <input type="submit" name="submit" class="waves-effect waves-light btn">
       </form>
     </div>
 
