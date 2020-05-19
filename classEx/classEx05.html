@@ -11,14 +11,14 @@
   <title>Class Exercise 05</title>
   <script>
     function changeLinkText(){
-      document.getElementById('divLeft').innerHTML = '<a href="#" onclick="newFunction()"> New Link</a>';
-      document.getElementById('divRight').innerHTML = "Some New Text";
+      document.getElementById('divLeft').innerHTML = '<a href="#" onclick="changeDivRightText("A01")"> A01</a>';
+      document.getElementById('divRight').innerHTML = "Contents for class exercises";
     }
     function changeDivRightText(txt){
-      if(txt == link1){
-        document.getElementById('divRight').innerHTML = 'Content from link 1a';
+      if(txt == "A01"){
+        document.getElementById('divRight').innerHTML = 'Display file for classEx01';
       } else if (txt == link2){
-        document.getElementById('divLeft').innerHTML = 'Content from link 1b';
+        document.getElementById('divRight').innerHTML = 'Content from link 1b';
       } else {
         document.getElementById('divRight').innerHTML = 'Content loaded when default link is clicked';
       }
@@ -28,16 +28,16 @@
 <body class="blue-grey">
   <div class="container">
     <div class="nav">
-      <h3 class="center">Class Exercise 03</h3>
+      <h3 class="center">Class Exercise 05</h3>
       <p class="center"><a href="../index.html">Home</a> | <a href="#">Class Exercises</a> | <a href="#">Assignments</a> | <a href="#">Recourses</a></p>
       <hr>
-      <p class="center">Class Links: <a href="classEx01.html">A01</a> | <a href="classEx02.html">A02</a> | <a href="ex.html">A02b</a> | <a href="classEx02c.html">A02c</a>| <a href="classEx03.html">A03</a></p>
+      <p class="center">Weekly Assignments: <a href="classEx01.html">A01</a> | <a href="classEx02.html">A02</a> | <a href="ex.html">A02b</a> | <a href="classEx02c.html">A02c</a> | <a href="classEx03.html">A03</a> | <a href="classEx05.html">A05</a> | <a href="classEx06a.html">A06a</a> </p>
     </div>
     <div class="row">
       <div class="col s12">
         <ul>
           <li>
-            <a href="#" onclick='changeLinkText("link1")'>Link 1</a>
+            <a href="#" onclick='changeLinkText("A01")'>Class Exercises</a>
           </li>
           <li>
             <a href="#">Link 2</a>
@@ -45,10 +45,10 @@
         </ul>
       </div>
       <div class="col s4" id='innerDivBodyLeft'>
-        <a href="#" id="divLeft">Some Link</a>
+        <a href="#" id="divLeft">Some Links</a>
       </div>
       <div class="col s8" id='innerDivBodyRight'>
-        <p id='textDivRight'>Content goes here when link is clicked</p>
+        <p id='divRight'>Content goes here when link is clicked</p>
       </div>
     </div>
   </div>

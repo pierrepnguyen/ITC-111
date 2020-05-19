@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Materialize scripts and styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <title>Class Exercise 06c</title>
+  <script>
+    function changeLinkText() {
+      // document.getElementById('divLeft').innerHTML = '<a href="#" onclick="changeDivRightText("link1")">Link 1a</a><br><a href="#" onclick="changeDivRightText("link2")">Link 1b</a>';
+      // The innerHTML of the div to the right is also changed
+      // document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
+      // Any of an elements properties can be changed this way. Here the color is changed.
+      // document.getElementById('divRight').style.color = 'red';
+
+      // set visibility s3 div to none
+      document.getElementById('divLeft').style.display = "none";
+    }
+
+    function changeDivRightText(txt) {
+      // the 'if' condition sets the text to display if Link 1a is clicked
+      if (txt == 'link1') {
+        document.getElementById('divRight').innerHTML = 'Content from Link 1a';
+        // the 'else if' condition sets the text to display if Link 1b is clicked
+      } else if (txt == 'link2') {
+        document.getElementById('divRight').innerHTML = 'Content from Link 1b';
+        // the 'else' is the text to display by default
+      } else {
+        document.getElementById('divRight').innerHTML = 'Content loaded when default link is clicked';
+      }
+    }
+  </script>
+</head>
+
+<body class="blue-grey">
+  <div class="container">
+    <div class="nav">
+      <h3 class="center">Class Exercise 06c</h3>
+      <p class="center"><a href="../index.html">Home</a> | <a href="#">Class Exercises</a> | <a href="#">Assignments</a> | <a href="#">Recourses</a></p>
+      <hr>
+      <p class="center">Weekly Assignments: <a href="classEx01.html">A01</a> | <a href="classEx02.html">A02</a> | <a href="ex.html">A02b</a> | <a href="classEx02c.html">A02c</a> | <a href="classEx03.html">A03</a> | <a href="classEx05.html">A05</a> | <a href="classEx06a.html">A06a</a> | <a href="classEx06c.html">A06c</a> |</p>
+    </div>
+  <div class='row center'>
+    <a href="#" onclick='changeLinkText()'>Class Exercises</a> | 
+    <a href="#" onclick='changeColor()'>Assignments</a>
+  </div>
+  <div class="row">
+    <div class='col s3 center'>
+      <h5>Links</h5>
+      <hr>
+      <div id="">
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Course Info</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Goals & Objectives</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>History</a>
+      </div>
+      <div id="hide" style="display: none;">
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>A01</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>A02</a><br>
+      </div>
+    </div>
+    <div class='col s9'>
+      <p id='divRight'>Content loaded in div on page load by default.</p>
+    </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
