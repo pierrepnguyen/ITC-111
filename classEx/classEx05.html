@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Materialize scripts and styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <title>Class Exercise 05</title>
+  <script>
+    function changeLinkText(){
+      document.getElementById('divLeft').innerHTML = '<a href="#" onclick="newFunction()"> New Link</a>';
+      document.getElementById('divRight').innerHTML = "Some New Text";
+    }
+    function changeDivRightText(txt){
+      if(txt == link1){
+        document.getElementById('divRight').innerHTML = 'Content from link 1a';
+      } else if (txt == link2){
+        document.getElementById('divLeft').innerHTML = 'Content from link 1b';
+      } else {
+        document.getElementById('divRight').innerHTML = 'Content loaded when default link is clicked';
+      }
+    }
+  </script>
+</head>
+<body class="blue-grey">
+  <div class="container">
+    <div class="nav">
+      <h3 class="center">Class Exercise 03</h3>
+      <p class="center"><a href="../index.html">Home</a> | <a href="#">Class Exercises</a> | <a href="#">Assignments</a> | <a href="#">Recourses</a></p>
+      <hr>
+      <p class="center">Class Links: <a href="classEx01.html">A01</a> | <a href="classEx02.html">A02</a> | <a href="ex.html">A02b</a> | <a href="classEx02c.html">A02c</a>| <a href="classEx03.html">A03</a></p>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <ul>
+          <li>
+            <a href="#" onclick='changeLinkText("link1")'>Link 1</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col s4" id='innerDivBodyLeft'>
+        <a href="#" id="divLeft">Some Link</a>
+      </div>
+      <div class="col s8" id='innerDivBodyRight'>
+        <p id='textDivRight'>Content goes here when link is clicked</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
