@@ -1,0 +1,39 @@
+body{
+  background-image: linear-gradient(to right, slategray, gainsboro);
+  font-family: 'Poppins', sans-serif;
+}
+
+b{
+  font-weight: bold;
+}
+
+.quote{
+  font-style: italic;
+}
+
+a{
+  color: slateblue;
+}
+
+#bar{
+  color: lightslategrey;
+  text-shadow: lightsteelblue;
+}
+
+#jeff{
+  display: none;
+}
+
+#elon_img{
+  width: 15%;
+  height: 15%;
+}
+
+#jeff_img{
+  width: 25%;
+  height: 25%;
+}
+
+/* #head{
+  margin-top: 50px;
+} */

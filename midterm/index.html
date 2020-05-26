@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Tribute Webpage Mid-term</title>
+</head>
+<body>
+  <div id="container">
+    <div class="center">
+      <h6 id="head">
+        <a href="#" onclick="changeContent('elon')">Elon Musk</a><span id="bar"> | </span>
+        <a href="#" onclick="changeContent('jeff')">Jeff Bezos</a>
+      </h6>
+      <hr>
+    </div>
+    <!-- Default page shows Elon Musk data -->
+    <div class="row" id="elon">
+      <h4 class="center">Elon Musk</h4>
+      <div class="center">
+        <img src="../img/emusk.jpg" alt="Elon Musk" class="center" id="elon_img">
+        <p><b class="quote">Elon Musk: “When something is important enough, you do it even if the odds are not in your favor.”</b></p>
+      </div>
+      <ul class="center">
+        <li><b>1995: </b>Dropped out of Standford after 2 days and started Zip2</li>
+        <li><b>1999: </b>Co-founded X.com more known as Paypal</li>
+        <li><b>2001: </b>Started project to make reusable rockets called SpaceX</li>
+        <li><b>2003: </b>Joined Tesla board as chairman</li>
+        <br>
+        <li>To get more information on Elon Musk check out the <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">wikipedia</a> page</li>
+      </ul>
+    </div>
+
+    <!-- Jeff Bezoz data -->
+    <div class="row" id="jeff">
+      <h4 class="center">Jeff Bezos</h4>
+      <div class="center">
+        <img src="https://www.thegrowthop.com/wp-content/uploads/2020/05/GettyImages-1177532680-e1589810097651.jpg" alt="Jeff Bezos" id="jeff_img" class="center">
+        <p><b class="quote">Jeff Bezos: “One of the only ways to get out of a tight box is to invent your way out”</b></p>
+      </div>
+      <ul class="center">
+        <li><b>1986: </b>Graduated from Princeton University</li>
+        <li><b>1993: </b>Established an online bookstore and founded Amazon originally named Cadabra</li>
+        <li><b>1996: </b>Took Amazon public with an initial public offering</li>
+        <li><b>2000: </b>Founded <a href="https://en.wikipedia.org/wiki/Blue_Origin" target="_blank">Blue Origin</a>, a human spaceflight startup</li>
+        <li><b>2013: </b>Purchased Washington Post for $250 million in cash</li>
+        <br>
+        <li>To get more information on Jeff Bezos check out the <a href="https://en.wikipedia.org/wiki/Jeff_Bezos" target="_blank">wikipedia</a> page</li>
+      </ul>
+    </div>
+    <hr>
+    <footer class="center">ITC-111 - Pierre Nguyen - May 21, 2020</footer>
+  </div>
+</body>
+</html>
