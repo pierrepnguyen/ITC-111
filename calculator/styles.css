@@ -1,0 +1,47 @@
+#container{
+  background-color: lightslategrey;
+  margin: 0 auto;
+  padding: 2px 2px auto;
+  width: max-content;
+  overflow: hidden;
+}
+
+.row{
+  height: max-content;
+  margin: 0 2px auto;
+  overflow: hidden;
+}
+
+#display1{
+  margin: 1px 0;
+  text-align: right;
+  font-size: 18px;
+  color: red;
+  width: 270px;
+  height: 18px;
+}
+
+#display2{
+  background-color: azure;
+  margin: 0 2px auto;
+  text-align: right;
+  font-size: xx-large;
+  width: 273px;
+  height: 40px;
+}
+
+button{
+  background-color: white;
+  font-size: x-large;
+  float: left;
+  height: 70px;
+  width: 70px;
+}
+
+button:hover{
+  background-color: rgba(211, 211, 211, 0.678);
+}
+
+button:active{
+  background-color: rgb(114, 106, 122);
+}
