@@ -35,7 +35,7 @@ function doMath(){
     case '/':
       result = parseInt(val1) + parseInt(val2);
       break;
-    case '&radic;':
+    case 's':
       result = Math.sqrt(parseInt(val2));
       break;
     case 'p':
