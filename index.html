@@ -3,23 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Materialize scripts and styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <title>ITC-111</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/07script.js"></script>
+  <title>ITC-111 SP20</title>
 </head>
+
 <body class="blue-grey">
   <div class="container">
-    <!-- NAV -->
     <div class="nav">
-      <h3 class="center">ITC-111 Assignment Portal</h3>
-      <p class="center"><a href="index.html">Home</a> | <a href="#">Class Exercises</a> | <a href="#">Assignments</a> | <a href="#">Recourses</a></p>
+      <h3 class="center">ITC-111 Web Portal</h3>
       <hr>
-      <p class="center">Weekly Assignments: <a href="classEx/classEx01.html">A01</a> | <a href="classEx/classEx02.html">A02</a> | <a href="classEx/ex.html">A02b</a> | <a href="classEx/classEx02c.html">A02c</a>| <a href="classEx/classEx03.html">A03</a></p>
-    </div>  
-    <!-- MAIN CONTENT -->
-    <div class="row">
-      
+      <p class="center">Class Examples: <a href="classEx/classEx01.html">A01</a> | <a href="classEx/classEx02.html">A02</a> | <a href="classEx/ex.html">A02b</a> | <a href="classEx/classEx02c.html">A02c</a> | <a href="classEx/classEx03.html">A03</a> | <a href="classEx/classEx05.html">A05</a> | <a href="classEx/classEx06a.html">A06a</a> | <a href="classEx/classEx06c.html">A06c</a> | <a href="classEx/classEx07a.html">A07a</a></p>
+    </div>
+  <div class='row center'>
+    <a href="#" onclick='changeLinkText("home")'>Home</a> | 
+    <a href="#" onclick='changeLinkText("ce")'>Class Exercises</a> | 
+    <a href="#" onclick='changeLinkText("asgn")'>Assignments</a> | 
+    <a href="#" onclick='changeLinkText("rcs")'>Recourses</a>
+  </div>
+  <div class="row">
+    <div class='col s3 center'>
+      <h5 id="ls_Head">Links</h5>
+      <hr>
+      <div id="default">
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Course Info</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Goals & Objectives</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>History</a>
+      </div>
+      <!-- Class Ex Links -->
+      <div id="ceLinks" style="display: none;">
+        <a href='calculator/calculator.html' class='divLeftLinks' onclick='changeDivRightText("A01")'>A01 - Calculator</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText("A02")'>A02</a><br>
+      </div>
+      <!-- Assignment links -->
+      <div id="aLinks" style="display: none;">
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Assignment 01</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Assignment 02</a><br>
+      </div>
+      <div id="rcsLinks" style="display: none;">
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Recourses</a><br>
+        <a href='#' class='divLeftLinks' onclick='changeDivRightText()'>Recourses</a><br>
+      </div>
+    </div>
+    <div class='col s9 center'>
+      <h5 id="rs_Head">Intro to Programming w/HTML, CSS, & JavaScript</h5>
+      <p id="divRight">Content loaded in div on page load by default</p>
+    </div>
     </div>
   </div>
+  
 </body>
 </html>
